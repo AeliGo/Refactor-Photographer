@@ -17,19 +17,9 @@ const routes = [
     component: require('../../layouts/index.tsx').default,
     routes: [
       {
-        path: '/Home',
+        path: '/EnterIndex',
         exact: true,
-        component: require('../Home/index.tsx').default,
-      },
-      {
-        path: '/Home/model',
-        exact: true,
-        component: require('../Home/model.ts').default,
-      },
-      {
-        path: '/Home/service',
-        exact: true,
-        component: require('../Home/service.ts').default,
+        component: require('../EnterIndex/index.tsx').default,
       },
       {
         path: '/Infomation',
@@ -37,9 +27,9 @@ const routes = [
         component: require('../Infomation/index.tsx').default,
       },
       {
-        path: '/Thumbnail',
+        path: '/Thumbnails',
         exact: true,
-        component: require('../Thumbnail/index.tsx').default,
+        component: require('../Thumbnails/index.tsx').default,
       },
       {
         path: '/',
@@ -49,7 +39,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('/Users/pagalili/Documents/refactor-photographer/Refactor-Photographer/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('/Users/pagalili/Documents/refactor/Refactor-Photographer/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: false },
           ),
@@ -59,7 +49,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('/Users/pagalili/Documents/refactor-photographer/Refactor-Photographer/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('/Users/pagalili/Documents/refactor/Refactor-Photographer/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: false },
       ),

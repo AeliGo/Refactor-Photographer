@@ -5,8 +5,8 @@ import { AnimationWrapper } from '../../components/AnimationWrapper';
 export default function() {
   const [inProp, setInProp] = useState(false);
   return (
-    <AnimationWrapper>
-      <div>INFOMATION---INFOMATION--INFOMATIONINFOMATION</div>
-    </AnimationWrapper>
+      <AnimationWrapper>
+        <div>HOMEHOMEHOMEHOMEHOME----HOMEHOMEHOMEHOMEHOME---HOMEHOME</div>
+      </AnimationWrapper>
   );
 }
