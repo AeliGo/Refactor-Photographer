@@ -1,13 +1,18 @@
-import React, { FC, useState, ReactElement, ReactComponentElement } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import 'animate.css/animate.min.css';
 
 export interface AnimationWrapperProps {
-  visible: Boolean;
   children: JSX.Element;
 }
 
-export const AnimationWrapper: FC<AnimationWrapperProps> = ({ visible, children }) => {
+export const AnimationWrapper: FC<AnimationWrapperProps> = ({ children }) => {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setVisible(true);
+  }, []);
+
   return (
     <CSSTransition
       in={visible}

@@ -4,7 +4,7 @@ import { AnimationWrapper } from '../../components/AnimationWrapper';
 
 export default function() {
   return (
-    <AnimationWrapper visible={true}>
+    <AnimationWrapper>
       <div>HOMEHOMEHOMEHOMEHOME----HOMEHOMEHOMEHOMEHOME---HOMEHOME</div>
     </AnimationWrapper>
   );

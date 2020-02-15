@@ -4,7 +4,7 @@ import { AnimationWrapper } from '../components/AnimationWrapper';
 
 export default function() {
   return (
-    <AnimationWrapper visible={true}>
+    <AnimationWrapper >
       <div className={styles.enterContainer} />
     </AnimationWrapper>
   );
