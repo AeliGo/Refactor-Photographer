@@ -4,6 +4,7 @@ import { AnimationWrapper } from '../../components/AnimationWrapper';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import Link from 'umi/link';
 import config from '../../config';
+import "react-perfect-scrollbar/dist/css/styles.css";
 
 export interface IThumbnailsProps {}
 
@@ -26,10 +27,10 @@ export default class Thumbnails extends React.Component<IThumbnailsProps, IThumb
     this.state = {
       urlList: [],
     };
+    this.fillList();
   }
 
   componentDidMount() {
-    this.fillList();
     document.addEventListener('keydown', this.keyUpFun); //绑定键盘事件
   }
 
@@ -98,7 +99,6 @@ export default class Thumbnails extends React.Component<IThumbnailsProps, IThumb
                       pathname: `/detail/${item.numInAll}`,
                     }}
                   >
-                    item
                     <img src={item.url} alt="" />
                   </Link>
                 );
