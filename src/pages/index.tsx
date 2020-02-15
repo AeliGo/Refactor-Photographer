@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import styles from './style.less';
+import { AnimationWrapper } from '../components/AnimationWrapper';
 
 export default function() {
-  return <div className={styles.enterContainer}></div>;
+  return (
+    <AnimationWrapper visible={true}>
+      <div className={styles.enterContainer} />
+    </AnimationWrapper>
+  );
 }

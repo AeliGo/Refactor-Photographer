@@ -1,12 +1,24 @@
 import React from 'react';
 import Link from 'umi/link';
 import styles from './index.less';
+import classNames from 'classnames';
 
-const BasicLayout: React.FC = props => {
+export interface BasicLayoutProps {
+  location?: {
+    pathname: string;
+  };
+  children: JSX.Element;
+}
+
+const BasicLayout: React.FC<BasicLayoutProps> = ({ location = {}, children }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.navContainer}>
-        <div className={styles.navLeft}>
+        <div
+          className={classNames(styles.navLeft, {
+            [styles.darkColor]: location.pathname !== '/',
+          })}
+        >
           <div className={styles.indexName}>
             <Link to="/">Xu Yingda</Link>
           </div>
@@ -23,7 +35,7 @@ const BasicLayout: React.FC = props => {
           </div>
         </div>
       </div>
-      {props.children}
+      <div className={styles.pages}>{children}</div>
     </div>
   );
 };

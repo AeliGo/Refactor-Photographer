@@ -5,8 +5,13 @@ import { AnimationWrapper } from '../../components/AnimationWrapper';
 export default function() {
   const [inProp, setInProp] = useState(false);
   return (
-    <AnimationWrapper>
-      <div>INFOMATION---INFOMATION--INFOMATIONINFOMATION</div>
+    <AnimationWrapper visible={true}>
+      <div>
+        INFOMATION---INFOMATION--INFOMATIONINFOMATION INFOMATION---INFOMATION--INFOMATIONINFOMATION
+        INFOMATION---INFOMATION--INFOMATIONINFOMATION INFOMATION---INFOMATION--INFOMATIONINFOMATION
+        INFOMATION---INFOMATION--INFOMATIONINFOMATION INFOMATION---INFOMATION--INFOMATIONINFOMATION
+        INFOMATION---INFOMATION--INFOMATIONINFOMATION INFOMATION---INFOMATION--INFOMATIONINFOMATION
+      </div>
     </AnimationWrapper>
   );
 }

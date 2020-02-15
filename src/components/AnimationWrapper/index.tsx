@@ -1,16 +1,16 @@
-import React, { FC } from 'react';
+import React, { FC, useState, ReactElement, ReactComponentElement } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import 'animate.css/animate.min.css';
 
-export interface IProps {
-  match?: Object;
+export interface AnimationWrapperProps {
+  visible: Boolean;
   children: JSX.Element;
 }
 
-export const AnimationWrapper: FC<IProps> = ({ match, children }) => {
+export const AnimationWrapper: FC<AnimationWrapperProps> = ({ visible, children }) => {
   return (
     <CSSTransition
-      in={match !== null}
+      in={visible}
       classNames={{
         enter: 'animated',
         enterActive: 'fadeIn',
@@ -21,8 +21,8 @@ export const AnimationWrapper: FC<IProps> = ({ match, children }) => {
         enter: 1500,
         exit: 0,
       }}
-      mountOnEnter={true}
-      unmountOnExit={true}
+      mountOnEnter
+      unmountOnExit
     >
       {children}
     </CSSTransition>

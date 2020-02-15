@@ -5,8 +5,8 @@ import { AnimationWrapper } from '../../components/AnimationWrapper';
 export default function() {
   const [inProp, setInProp] = useState(false);
   return (
-    <AnimationWrapper>
-      <div>THUMBNAIL,-THUMBNAIL-THUMBNAIL-THUMBNAIL-THUMBNAIL-</div>
-    </AnimationWrapper>
+      <AnimationWrapper visible={true}>
+        <div>THUMBNAIL,-THUMBNAIL-THUMBNAIL-THUMBNAIL-THUMBNAIL-</div>
+      </AnimationWrapper>
   );
 }
