@@ -17,6 +17,11 @@ const routes = [
     component: require('../../layouts/index.tsx').default,
     routes: [
       {
+        path: '/Detail/:id',
+        exact: true,
+        component: require('../Detail/index.tsx').default,
+      },
+      {
         path: '/EnterIndex',
         exact: true,
         component: require('../EnterIndex/index.tsx').default,
