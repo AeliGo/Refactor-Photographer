@@ -1,7 +1,7 @@
 import React, { createRef } from 'react';
 import styles from './style.less';
 import classNames from 'classnames';
-import config from '../../config';
+import config from '../../../config';
 
 export interface IDetailProps {
   history:{location:{pathname:string}}
