@@ -4,7 +4,7 @@ import { AnimationWrapper } from '../../components/AnimationWrapper';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import Link from 'umi/link';
 import config from '../../config';
-import "react-perfect-scrollbar/dist/css/styles.css";
+import 'react-perfect-scrollbar/dist/css/styles.css';
 
 export interface IThumbnailsProps {}
 
